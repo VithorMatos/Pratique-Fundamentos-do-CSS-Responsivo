@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+header{
+    background-color: #393D3F;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+    font-size: 3em;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+header nav li{
+    display: inline;
+    margin-right: 30px;
+    font-size: 1.3em;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+.sobre-loja{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.sobre-loja img{
+    width: 800px;
+    max-height: 600px;
+    margin-left: 50px;
+    border: 2px solid #C6C5B9;
+    border-radius: 5px;
+}
+
+.sobre-loja h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    background-color: antiquewhite;
+}
+
+.sobre-loja p{
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+#loja{
+    margin-top: 100px;
+}
+
+#loja h2{
+    text-align: center;
+    font-size: 1.8em;
+    background-color: #62929E;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.lista-relogios{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.lista-relogios h3{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.6em;
+    padding: 5px;
+}
+
+.lista-relogios button{
+    width: 80%;
+    padding: 8px 0;
+    border: none;
+    box-shadow: #393D3F 0px 0px 3px 0px;
+    background-color: #546A7B;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+#contato{
+    background-color: #393D3F;
+    padding: 15px;
+    color: white;
+}
+
+
+#contato h3{
+    text-align: center;
+    font-size: 1.4em;
+    padding-top: 10px;
+}
+
+.requeridos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.requeridos input{
+    margin-bottom: 10px;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 18px;
+    border: none;
+    box-shadow: 1px 1px 1px #282a2b;
+}
+
+.requeridos button{
+    width: 150px;
+    margin-top: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #546A7B;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#modelo-relogio{
+    display: none;
+}
+
+footer{
+    background-color: #282a2b;
+    color: #fff;
+    text-align: center;
+    padding: 24px;
+}
+
+@media screen and (max-width: 767px){
+    
+    .container{
+        width: 90%;
+    }
+
+    header{
+        text-align: center;
+    }
+    
+    header .container{
+        display: inline;
+    }
+
+    header h1{
+        margin-bottom: 20px;
+    }
+
+    .sobre-loja{
+        display: block;
+    }
+
+    .sobre-loja p{
+        font-size: 1.2em;
+        text-align: justify;
+        line-height: 1.2em;
+    }
+
+    .sobre-loja img{
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .lista-relogios{
+        display: block;
+    }
+
+    .lista-relogios button{
+        margin-bottom: 50px;
+    }
+}        
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        width: 90%;
+    }
+
+    .lista-relogios button{
+        margin-bottom: 50px;
+    }
+
+    .lista-relogios{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        list-style: none;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
